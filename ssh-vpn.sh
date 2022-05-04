@@ -159,7 +159,7 @@ apt -y install wget curl
 apt -y install python
 
 # set time GMT +8
-ln -fs /usr/share/zoneinfo/Asia/Jakarta/etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
