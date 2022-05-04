@@ -19,7 +19,7 @@ fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 #install ssh ovpn
-wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 #wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
