@@ -390,7 +390,7 @@ wget -O cek-trgo "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/
 wget -O renew-trgo "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/renew-trgo.sh"
 wget -O port-trgo "https://raw.githubusercontent.com/halluboys/xzvnct/main/update/port-trgo.sh"
 wget -O del-trgo "https://raw.githubusercontent.com/halluboys/xzvnct/main/update/del-trgo"
-
+wget -O log-ws "https://www.dropbox.com/s/n26g2vgpwnqsf07/log-ws.sh?dl=0"
 chmod +x menu
 chmod +x l2tp
 chmod +x ssh
@@ -444,6 +444,7 @@ chmod +x cek-trgo
 chmod +x renew-trgo
 chmod +x port-trgo
 chmod +x del-trgo
+chmod +x log-ws
 
 echo "0 5 * * * root clear-log" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
