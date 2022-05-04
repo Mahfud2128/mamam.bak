@@ -32,7 +32,7 @@ wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ins-vt.sh && 
 #wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget -O set-br.sh https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
-#wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ins-trojango.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
+wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/ins-trgo.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
 #log
 wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/log.sh && dos2unix log.sh && chmod +x log.sh && ./log.sh
 rm -f /root/ssh-vpn.sh
