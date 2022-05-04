@@ -35,7 +35,7 @@ wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ins-vt.sh && 
 #wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget -O set-br.sh https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install trojan-go
-wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/ins-trgo.sh && dos2unix ins-trojango.sh && chmod +x ins-trojango.sh && ./ins-trojango.sh
+wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/ins-trgo.sh && dos2unix ins-trgo.sh && chmod +x ins-trgo.sh && ./ins-trgo.sh
 #log
 wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/log.sh && dos2unix log.sh && chmod +x log.sh && ./log.sh
 rm -f /root/ssh-vpn.sh
@@ -46,7 +46,7 @@ rm -f /root/wg.sh
 rm -f /root/ins-vt.sh
 rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
-rm -f /root/ins-trojango.sh
+rm -f /root/ins-trgo.sh
 rm -f /root/log.sh
 
 cat <<EOF> /etc/systemd/system/autosett.service
