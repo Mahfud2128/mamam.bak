@@ -19,6 +19,8 @@ fi
 read -p " Hostname / Domain: " host
 mkdir /var/lib/premium-script;
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
+echo "$host" >> /etc/rare/xray/domain
+echo "$host" >> /root/domain
 #install ssh ovpn
 wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
