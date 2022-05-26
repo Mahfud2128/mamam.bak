@@ -494,7 +494,7 @@ cd /usr/bin
 wget -O add-ws "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/add-ws.sh"
 wget -O add-vless "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/add-vless.sh"
 wget -O add-tr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/add-tr.sh"
-wget -O del-ws "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/del-ws.sh"
+wget -O del-ws "https://raw.githubusercontent.com/Mahfud2128/mamam/main/add-ws.sh"
 wget -O del-vless "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/del-vless.sh"
 wget -O del-tr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/del-tr.sh"
 wget -O cek-ws "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/cek-ws.sh"
