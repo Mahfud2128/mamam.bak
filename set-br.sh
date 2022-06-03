@@ -27,7 +27,7 @@ EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
 wget -O autobackup "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/backup.sh"
+wget -O backup "https://raw.githubusercontent.com/Mahfud2128/mamam/main/backup.sh"
 wget -O bckp "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/backup.sh"
 wget -O restore "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/restore.sh"
 wget -O strt "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/strt.sh"
