@@ -31,7 +31,7 @@ wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/ssh-vpn.sh && chmod
 #install wireguard
 #wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
-wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
 #wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget -O set-br.sh https://raw.githubusercontent.com/Mahfud2128/mamam/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
