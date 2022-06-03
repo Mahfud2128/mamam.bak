@@ -20,6 +20,7 @@ read -p " Hostname / Domain: " host
 mkdir /var/lib/premium-script;
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
+echo "$host" >> /etc/xray/domain
 echo "$host" >> /root/domain
 #install ssh ovpn
 wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
@@ -39,7 +40,7 @@ wget -O set-br.sh https://raw.githubusercontent.com/Mahfud2128/mamam/main/set-br
 #install xray-grpc
 wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/xray-grpc.sh && chmod +x xray-grpc.sh && ./xray-grpc.sh
 #log
-wget https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/log.sh && dos2unix log.sh && chmod +x log.sh && ./log.sh
+wget https://raw.githubusercontent.com/Mahfud2128/mamam/main/log.sh && dos2unix log.sh && chmod +x log.sh && ./log.sh
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
 rm -f /root/ss.sh
