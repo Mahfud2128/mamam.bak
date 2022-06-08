@@ -322,7 +322,7 @@ cd /usr/bin
 wget -O addgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/addgrpc.sh"
 wget -O delgrpc "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/grpc/delgrpc.sh"
 wget -O renewgrpc "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/grpc/renewgrpc.sh"
-wget -O cekgrpc "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/grpc/cekgrpc.sh"
+wget -O cekgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/cekgrpc.sh"
 
 chmod +x addgrpc
 chmod +x delgrpc
