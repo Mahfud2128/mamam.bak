@@ -141,9 +141,9 @@ fi
 
 # Status Service  VmessGRPC 
 if [[ $vmessgrpc_status == "running" ]]; then 
-   status_vmessgrpc="${GREEN}V2Ray HTTPS Service Is Running${NC} ( Aktif )"
+   status_vmessgrpc="${GREEN}Vmess GRPC Service Is Running${NC} ( Aktif )"
 else
-   status_vmessgrpc="${RED}V2Ray HTTPS Service Is Not Running${NC} ( Not Aktif )"
+   status_vmessgrpc="${RED}Vmess GRPC Service Is Not Running${NC} ( Not Aktif )"
 fi
 
 # Status Service Non TLS V2Ray
