@@ -141,9 +141,9 @@ fi
 
 # Status Service  VmessGRPC 
 if [[ $vmessgrpc_status == "running" ]]; then 
-   status_tls_v2ray="${GREEN}V2Ray HTTPS Service Is Running${NC} ( Aktif )"
+   status_vmessgrpc="${GREEN}V2Ray HTTPS Service Is Running${NC} ( Aktif )"
 else
-   status_tls_v2ray="${RED}V2Ray HTTPS Service Is Not Running${NC} ( Not Aktif )"
+   status_vmessgrpc="${RED}V2Ray HTTPS Service Is Not Running${NC} ( Not Aktif )"
 fi
 
 # Status Service Non TLS V2Ray
@@ -348,6 +348,6 @@ echo -e "Shadowsocks : $status_sodosok"
 echo -e "Trojan      : $status_virus_trojan"
 echo -e "Trojan GO   : $status_trgo"
 echo -e "Wireguard   : $status_wg"
-echo -e "Vmess GRPC  : $vmess_grpc"
+echo -e "Vmess GRPC  : $status_vmessgrpc"
 echo "------------------------------------------------------------------------" | lolcat 
 echo ""
