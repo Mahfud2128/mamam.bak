@@ -76,8 +76,8 @@ cat > /etc/xray/vmessgrpc.json << END
                     ],
                     "certificates": [
                         {
-                            "certificateFile": "/etc/xray/xray.crt",
-                            "keyFile": "/etc/xray/xray.key"
+                            "certificateFile": "/etc/v2ray/v2ray.crt",
+                            "keyFile": "/etc/v2ray/v2ray.key"
                         }
                     ]
                 },
@@ -189,8 +189,8 @@ cat > /etc/xray/vlessgrpc.json << END
                     ],
                     "certificates": [
                         {
-                            "certificateFile": "/etc/xray/xray.crt",
-                            "keyFile": "/etc/xray/xray.key"
+                            "certificateFile": "/etc/v2ray/v2ray.crt",
+                            "keyFile": "/etc/v2ray/v2ray.key"
                         }
                     ]
                 },
