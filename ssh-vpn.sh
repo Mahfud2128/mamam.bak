@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script By Brody
+# Script By GDStore
 # ==================================================
 
 # initializing var
@@ -178,7 +178,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<h1><center>AutoScriptVPS By Brody</center></h1>" > /home/vps/public_html/index.html
+echo "<h1><center>AutoScriptVPS By GDStore</center></h1>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/vps.conf"
 /etc/init.d/nginx restart
 
