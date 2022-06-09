@@ -78,6 +78,7 @@ trgo="$(systemctl show trojan-go.service --no-page)"
 strgo=$(echo "${trgo}" | grep 'ActiveState=' | cut -f2 -d=)  
 sswg=$(systemctl status wg-quick@wg0 | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 vmessgrpc_status=$(systemctl status vmess-grpc | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+vlessgrpc_status=$(systemctl status vless-grpc | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 
 # Color Validation
 RED='\033[0;31m'
@@ -144,6 +145,13 @@ if [[ $vmessgrpc_status == "running" ]]; then
    status_vmessgrpc="${GREEN}Vmess GRPC Service Is Running${NC} ( Aktif )"
 else
    status_vmessgrpc="${RED}Vmess GRPC Service Is Not Running${NC} ( Not Aktif )"
+fi
+
+# Status Service  VlessGRPC 
+if [[ $vlessgrpc_status == "running" ]]; then 
+   status_vlessgrpc="${GREEN}Vless GRPC Service Is Running${NC} ( Aktif )"
+else
+   status_vmessgrpc="${RED}Vless GRPC Service Is Not Running${NC} ( Not Aktif )"
 fi
 
 # Status Service Non TLS V2Ray
@@ -349,5 +357,6 @@ echo -e "Trojan      : $status_virus_trojan"
 echo -e "Trojan GO   : $status_trgo"
 echo -e "Wireguard   : $status_wg"
 echo -e "Vmess GRPC  : $status_vmessgrpc"
+echo -e "Vless GRPC  : $status_vlessgrpc"
 echo "------------------------------------------------------------------------" | lolcat 
 echo ""
