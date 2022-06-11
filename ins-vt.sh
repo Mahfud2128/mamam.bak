@@ -503,7 +503,7 @@ wget -O cek-tr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ce
 wget -O renew-ws "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/renew-ws.sh"
 wget -O renew-vless "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/renew-vless.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/renew-tr.shsh"
-wget -O certv2ray "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/cert.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/Mahfud2128/mamam/main/cert.sh"
 chmod +x add-ws
 chmod +x add-vless
 chmod +x add-tr
