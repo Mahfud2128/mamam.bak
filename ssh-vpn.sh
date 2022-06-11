@@ -348,7 +348,7 @@ wget -O wgr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/wgr.s
 wget -O vleess "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/vleess.sh"
 wget -O bbr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/bbr.sh"
 wget -O bannerku "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/bannerku"
-wget -O add-host "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/add-host.sh"
+wget -O add-host "https://raw.githubusercontent.com/Mahfud2128/mamam/main/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/about.sh"
 wget -O usernew "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/trial.sh"
