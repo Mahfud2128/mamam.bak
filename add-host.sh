@@ -16,7 +16,8 @@ read -rp "Domain/Host: " -e host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 #rm -f /home/homain
 echo "$host" > /etc/v2ray/domain
-echo -e "[${GREEN}Done${NC}]"
+echo "$host" > /etc/xray/domain
+#echo -e "[${GREEN}Done${NC}]"
 
 #Update Sertificate SSL
 #echo "Automatical Update Your Sertificate SSL"
