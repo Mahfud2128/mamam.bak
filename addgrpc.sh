@@ -48,9 +48,7 @@ EOF
 vmess_base641=$( base64 -w 0 <<< $vmess_json1)
 ##vmesslink#1="vmess://$(base64 -w 0 /etc/xray/$user-tls.json)"
 vmesslink1="vmess://$(base64 -w 0 /etc/xray/$user-tls.json)"
-vlesslink1="vless://$(base64 -w 0 /etc/xray/$user-tls.json)"
-systemctl restart fb-vmess-grpc.service
-systemctl restart fb-vless-grpc.service
+vlesslink1="vless://${uuid}@${domain}:${vl}?mode=gun&security=tls&encryption=none&type=grpc&serviceName=GunService&sni=${domain}#$user"
 systemctl restart vmess-grpc.service
 systemctl restart vless-grpc.service
 service cron restart
