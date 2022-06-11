@@ -154,3 +154,4 @@ fi
 done
 systemctl restart vmess-grpc
 systemctl restart vless-grpc
+delete
