@@ -375,7 +375,7 @@ wget -O port-squid "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/mai
 wget -O port-ws "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-ws.sh"
 wget -O port-vless "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-vless.sh"
 wget -O wbmn "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/xp.sh"
+wget -O xp "https://raw.githubusercontent.com/Mahfud2128/mamam/main/xp.sh"
 wget -O swap "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/swapkvm.sh"
 wget -O user-limit "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/user-limit.sh"
 wget -O auto-reboot "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/auto-reboot.sh"
