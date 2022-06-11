@@ -336,7 +336,7 @@ apt -y install dos2unix
 
 # download script
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/Mahfud2128/mamam/main/menu.sh"
 wget -O l2tp "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/l2tp.sh"
 wget -O ssh "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ssh.sh"
 wget -O ssssr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ssssr.sh"
@@ -391,6 +391,7 @@ wget -O renew-trgo "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/mai
 wget -O port-trgo "https://raw.githubusercontent.com/halluboys/xzvnct/main/update/port-trgo.sh"
 wget -O del-trgo "https://raw.githubusercontent.com/halluboys/xzvnct/main/update/del-trgo"
 wget -O log-ws "https://www.dropbox.com/s/n26g2vgpwnqsf07/log-ws.sh?dl=0"
+wget -O vgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/vgrpc.sh"
 chmod +x menu
 chmod +x l2tp
 chmod +x ssh
@@ -444,6 +445,7 @@ chmod +x cek-trgo
 chmod +x renew-trgo
 chmod +x port-trgo
 chmod +x del-trgo
+chmod +x vgrpc
 chmod +x log-ws
 
 echo "0 5 * * * root clear-log" >> /etc/crontab
