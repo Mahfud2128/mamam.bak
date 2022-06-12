@@ -52,29 +52,29 @@ do
 if [[ -z "$akun" ]]; then
 acc="No"
 fi
-echo -n > /tmp/ipvmess.txt
+echo -n > /tmp/ipvless.txt
 dt2=( `netstat -anp | grep ESTABLISHED | grep tcp6 | grep xray | awk '{print $5}' | cut -d: -f1 | sort | uniq`);
 for ip in "${dt2[@]}"
 do
 jum1=$(cat /var/log/xray/access2.log | grep -w $akun | awk '{print $3}' | cut -d: -f1 | grep -w $ip | sort | uniq)
 if [[ "$jum1" = "$ip" ]]; then
-echo "$jum1" >> /tmp/ipvmess.txt
+echo "$jum1" >> /tmp/ipvless.txt
 else
 echo "$ip" >> /tmp/other.txt
 fi
-jum3=$(cat /tmp/ipvmess.txt)
+jum3=$(cat /tmp/ipvless.txt)
 sed -i "/$jum3/d" /tmp/other.txt > /dev/null 2>&1
 done
-jum=$(cat /tmp/ipvmess.txt)
+jum=$(cat /tmp/ipvless.txt)
 if [[ -z "$jum1" ]]; then
 echo > /dev/null
 else
-jum2=$(cat /tmp/ipvmess.txt | nl)
+jum2=$(cat /tmp/ipvless.txt | nl)
 echo "user : $acc";
 echo "$jum3";
 echo "-------------------------------"
 fi
-rm -rf /tmp/ipvmess.txt
+rm -rf /tmp/ipvless.txt
 done
 ot=$(cat /tmp/other.txt | sort | uniq | nl)
 echo "$ot";
