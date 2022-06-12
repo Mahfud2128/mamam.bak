@@ -350,7 +350,7 @@ wget -O bbr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/bbr.s
 wget -O bannerku "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/bannerku"
 wget -O add-host "https://raw.githubusercontent.com/Mahfud2128/mamam/main/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/about.sh"
-wget -O usernew "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/usernew.sh"
+wget -O usernew "https://raw.githubusercontent.com/Mahfud2128/mamam/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/hapus.sh"
 wget -O member "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/member.sh"
