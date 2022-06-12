@@ -140,7 +140,6 @@ fi
 done
 systemctl restart v2ray@vless
 systemctl restart v2ray@vnone
-do
 exp=$(grep -w "^### $user" "/etc/xray/vmessgrpc.json" | cut -d ' ' -f 3)
 exp=$(grep -w "^### $user" "/etc/xray/vlessgrpc.json" | cut -d ' ' -f 3)
 d1=$(date -d "$exp" +%s)
@@ -151,7 +150,6 @@ sed -i "/^### $user $exp/,/^},{/d" /etc/xray/vmessgrpc.json
 sed -i "/^### $user $exp/,/^},{/d" /etc/xray/vlessgrpc.json
 rm -f /etc/v2ray/$user-tls.json
 fi
-done
 systemctl restart vmess-grpc
 systemctl restart vless-grpc
 delete
