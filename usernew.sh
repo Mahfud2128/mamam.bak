@@ -63,4 +63,8 @@ echo -e "==============================" | lolcat
 echo -e "[PAYLOAD SSH WS]"
 echo -e "GET / HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "==============================" | lolcat
+echo -e "Payload Websocket SSL/TLS"
+echo -e "=============================="
+echo -e "GET wss://bug.com [protocol][crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "==============================" | lolcat
 echo -e "Expired On    : $exp"
