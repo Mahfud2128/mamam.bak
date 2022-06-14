@@ -58,3 +58,4 @@ echo "Done"
 echo "Please Check Your Email" | lolcat
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $URL >/dev/null
 echo $link | lolcat
+sh teslagi.sh
