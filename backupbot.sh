@@ -48,8 +48,10 @@ TEXT="The following is a link to your vps data backup file.
 Your VPS IP $IP
 
 If you want to restore data, please enter the link above.
-Thank You For Using Our Services Script By GDSTore
-Your Link $link"
+
+Thank You For Using Our Services Script By GDSTore :)
+
+Your Link = $link"
 rm -rf /root/backup
 rm -r /root/$IP-$date.zip
 echo "Done"
