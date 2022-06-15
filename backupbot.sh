@@ -15,8 +15,9 @@ clear
 IP=$(wget -qO- ifconfig.co);
 date=$(date +"%Y-%m-%d")
 clear
-echo " Pastikan Sudah Setting Chat ID anda di pengaturan"
+echo " Pastikan Sudah Setting Chat ID anda di pengaturan" | lolcat
 sleep 1
+echo " Dan Pastikan Sudah Start Bot @GDStore_bot " | lolcat
 echo Membuat Directory
 mkdir /root/backup
 sleep 1
