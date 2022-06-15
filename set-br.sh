@@ -77,11 +77,14 @@ host smtp.gmail.com
 port 587
 auth on
 user griyadigital98@gmail.com
-from griyadigital98@gmail.com
+from GriyaDigital-AutoBackup
 password qqyankyujywclinj
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
+chown root:msmtp /etc/msmtprc
+chmod 640 /etc/msmtprc
+
 cd /usr/bin
 wget -O autobackup "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/autobackup.sh"
 wget -O backup "https://raw.githubusercontent.com/Mahfud2128/mamam/main/backup.sh"
