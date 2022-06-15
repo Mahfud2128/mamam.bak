@@ -15,8 +15,7 @@ clear
 IP=$(wget -qO- ifconfig.co);
 date=$(date +"%Y-%m-%d")
 clear
-echo " Enter Your Email To Receive Message"
-read -rp " Email: " -e email
+echo " Pastikan Sudah Setting Chat ID anda di pengaturan"
 sleep 1
 echo Membuat Directory
 mkdir /root/backup
@@ -48,16 +47,13 @@ TEXT="The following is a link to your vps data backup file.
 
 Your VPS IP $IP
 
-$link
-
 If you want to restore data, please enter the link above.
-
-Thank You For Using Our Services Script By GDSTore"
+Thank You For Using Our Services Script By GDSTore
+Your Link $link"
 rm -rf /root/backup
 rm -r /root/$IP-$date.zip
 echo "Done"
-echo "Please Check Your Bot Telegram" | lolcat
+echo "Please Check Your Bot Telegram Or Copy Under Text" | lolcat
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
-sh backupbot
 echo $link | lolcat
 
