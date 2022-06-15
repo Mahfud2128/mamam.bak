@@ -56,6 +56,7 @@ else
 red "Permission Denied!"
 exit 0
 fi
+
 echo ""
 echo "===============================-{ Autoscript Premium }-=========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
