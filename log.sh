@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/Mahfud2128/mamam/main/ipvps.sh > /root/tmp
+    curl -sS https://raw.githubusercontent.com/bokir-tampan/test/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -15,14 +15,14 @@ BURIQ () {
     if [[ "$exp2" -le "0" ]]; then
     echo $user > /etc/.$user.ini
     else
-    rm -f  /etc/.$user.ini > /dev/null 2>&1
+    rm -f /etc/.$user.ini > /dev/null 2>&1
     fi
     done
-    rm -f  /root/tmp
+    rm -f /root/tmp
 }
-# https://raw.githubusercontent.com/Mahfud2128/mamam/main/ipvps.sh
+
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/Mahfud2128/mamam/main/ipvps.sh | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/bokir-tampan/test/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -37,6 +37,25 @@ res="Permission Accepted..."
 fi
 }
 
+PERMISSION () {
+    MYIP=$(curl -sS ipv4.icanhazip.com)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/bokir-tampan/test/main/ip | awk '{print $4}' | grep $MYIP)
+    if [ "$MYIP" = "$IZIN" ]; then
+    Bloman
+    else
+    res="Permission Denied!"
+    fi
+    BURIQ
+}
+green() { echo -e "\\033[32;1m${*}\\033[0m"; }
+red() { echo -e "\\033[31;1m${*}\\033[0m"; }
+PERMISSION
+if [ "$res" = "Permission Accepted..." ]; then
+echo -ne
+else
+red "Permission Denied!"
+exit 0
+fi
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
     IZIN=$(curl -sS https://raw.githubusercontent.com/Mahfud2128/mamam/main/ipvps.sh | awk '{print $4}' | grep $MYIP)
