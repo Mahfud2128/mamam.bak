@@ -56,18 +56,6 @@ else
 red "Permission Denied!"
 exit 0
 fi
-PERMISSION () {
-    MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/Mahfud2128/mamam/main/ipvps.sh | awk '{print $4}' | grep $MYIP)
-    if [ "$MYIP" = "$IZIN" ]; then
-    Bloman
-    else
-    res="Permission Denied!"
-    fi
-    BURIQ
-}
-
-
 echo ""
 echo "===============================-{ Autoscript Premium }-=========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
