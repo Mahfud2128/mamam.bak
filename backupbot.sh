@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CHATID="5325141986"
-KEY="5282675654:AAG7hJhGrbXWB2Q9jYbbh01AHwfl6nV96Hk"
+KEY="5318532626:AAH9spkuFm00gnYQAXNwKkvoeH_MTWn0u1A"
 TIME="10"
 BRL="https://api.telegram.org/bot$KEY/sendMessage"
 
@@ -55,7 +55,7 @@ Your Link = $link"
 rm -rf /root/backup
 rm -r /root/$IP-$date.zip
 echo "Done"
-echo "Please Check Your Bot Telegram Or Copy Under Text" | lolcat
+echo "Please Check Bot Telegram Or Copy Under Text" | lolcat
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
 echo $link | lolcat
 
