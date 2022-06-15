@@ -51,24 +51,26 @@ echo -e   "  \e[1;32m╠══════════════════�
 echo -e   " $mg ║\e[m$bd 11$bl]\e[m$bd Panel Domain"
 echo -e   " $mg ║\e[m$bd 12$bl]\e[m$bd Change Port All Account"
 echo -e   " $mg ║\e[m$bd 13$bl]\e[m$bd Autobackup Data VPS"
-echo -e   " $mg ║\e[m$bd 14$bl]\e[m$bd Backup Data VPS"
-echo -e   " $mg ║\e[m$bd 15$bl]\e[m$bd Restore Data VPS"
-echo -e   " $gl ║\e[m$bd 16$bl]\e[m$bd Webmin Menu"
-echo -e   " $gl ║\e[m$bd 17$bl]\e[m$bd Limit Bandwith Speed Server"
-echo -e   " $gl ║\e[m$bd 18$bl]\e[m$bd Check Usage of VPS Ram" 
-echo -e   " $gl ║\e[m$bd 19$bl]\e[m$bd Reboot VPS"
-echo -e   " $gl ║\e[m$bd 20$bl]\e[m$bd Speedtest VPS"
-echo -e   " $gl ║\e[m$bd 21$bl]\e[m$bd Information Display System" 
-echo -e   " $gl ║\e[m$bd 22$bl]\e[m$bd Info Script Auto Install"
-echo -e   " $gl ║\e[m$bd 23$bl]\e[m$bd Install BBR"
-echo -e   " $bl ║\e[m$bd 24$bl]\e[m$bd Set Auto Reboot"
-echo -e   " $bl ║\e[m$bd 25$bl]\e[m$bd Status Tunneling"
-echo -e   " $bl ║\e[m$bd 26$bl]\e[m$bd Clear Log"
-echo -e   " $bl ║\e[m$bd 27$bl]\e[m$bd Restart All Service"
-echo -e   " $bl ║\e[m$bd 28$bl]\e[m$bd Change Banner"
-echo -e   " $bl ║\e[m$bd 29$bl]\e[m$bd Cek Bandwith"
-echo -e   " $bl ║\e[m$bd 30$bl]\e[m$bd Reset Server"
-echo -e   " $bl ║\e[m$bd 31$bl]\e[m$bd Update To Last Version                                 ╥"
+echo -e   " $mg ║\e[m$bd 14$bl]\e[m$bd Backup Data VPS Via Email"
+echo -e   " $mg ║\e[m$bd 15$bl]\e[m$bd Setting Backup Data VPS Via Bot"
+echo -e   " $mg ║\e[m$bd 16$bl]\e[m$bd Backup Data VPS Via Bot"
+echo -e   " $mg ║\e[m$bd 17$bl]\e[m$bd Restore Data VPS"
+echo -e   " $gl ║\e[m$bd 18$bl]\e[m$bd Webmin Menu"
+echo -e   " $gl ║\e[m$bd 19$bl]\e[m$bd Limit Bandwith Speed Server"
+echo -e   " $gl ║\e[m$bd 20$bl]\e[m$bd Check Usage of VPS Ram" 
+echo -e   " $gl ║\e[m$bd 21$bl]\e[m$bd Reboot VPS"
+echo -e   " $gl ║\e[m$bd 22$bl]\e[m$bd Speedtest VPS"
+echo -e   " $gl ║\e[m$bd 23$bl]\e[m$bd Information Display System" 
+echo -e   " $gl ║\e[m$bd 24$bl]\e[m$bd Info Script Auto Install"
+echo -e   " $gl ║\e[m$bd 25$bl]\e[m$bd Install BBR"
+echo -e   " $bl ║\e[m$bd 26$bl]\e[m$bd Set Auto Reboot"
+echo -e   " $bl ║\e[m$bd 27$bl]\e[m$bd Status Tunneling"
+echo -e   " $bl ║\e[m$bd 28$bl]\e[m$bd Clear Log"
+echo -e   " $bl ║\e[m$bd 29$bl]\e[m$bd Restart All Service"
+echo -e   " $bl ║\e[m$bd 30$bl]\e[m$bd Change Banner"
+echo -e   " $bl ║\e[m$bd 31$bl]\e[m$bd Cek Bandwith"
+echo -e   " $bl ║\e[m$bd 32$bl]\e[m$bd Reset Server"
+echo -e   " $bl ║\e[m$bd 33$bl]\e[m$bd Update To Last Version                                 ╥"
 echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" | lolcat
 echo -e   "  ║ x)   Exit                                                  ║\e[m" | lolcat
 echo -e   "  \e[1;32m╚════════════════════════════════════════════════════════════╝\e[m" | lolcat
@@ -119,54 +121,60 @@ autobackup
 backup
 ;;
 15)
-restore
+set-backupbot
 ;;
 16)
-wbmn
+backupbot
 ;;
 17)
-limit-speed
+restore
 ;;
 18)
-ram
+wbmn
 ;;
 19)
-reboot
+limit-speed
 ;;
 20)
-speedtest
+ram
 ;;
 21)
-info
+reboot
 ;;
 22)
-about
+speedtest
 ;;
 23)
-bbr
+info
 ;;
 24)
-auto-reboot
+about
 ;;
 25)
-running
+bbr
 ;;
 26)
-clear-log
+auto-reboot
 ;;
 27)
-restart
+running
 ;;
 28)
-nano /etc/issue.net
+clear-log
 ;;
 29)
-bw
+restart
 ;;
 30)
-resett
+nano /etc/issue.net
 ;;
 31)
+bw
+;;
+32)
+resett
+;;
+33)
 update
 ;;
 x)
