@@ -32,6 +32,10 @@ wget -O bckp "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/back
 wget -O restore "https://raw.githubusercontent.com/Mahfud2128/mamam/main/restore.sh"
 wget -O strt "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/strt.sh"
 wget -O limit-speed "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/limit-speed.sh"
+wget -O backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/backupbot.sh"
+wget -O set-backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/set-backupbot.sh"
+chmod +x backupbot
+chmod +x set-backupbot
 chmod +x autobackup
 chmod +x backup
 chmod +x bckp
