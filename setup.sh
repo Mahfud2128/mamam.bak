@@ -71,6 +71,7 @@ MYIP=$(wget -qO- ifconfig.co);
 clear
 if [ -f "/etc/v2ray/domain" ]; then
 echo "Script Already Installed"
+rm setup.sh 0
 exit 0
 fi
 read -p " Hostname / Domain: " host
