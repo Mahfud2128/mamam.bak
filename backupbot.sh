@@ -72,10 +72,10 @@ clear
 IP=$(wget -qO- ifconfig.co);
 date=$(date +"%Y-%m-%d")
 clear
-echo " Pastikan Sudah Setting Chat ID anda di pengaturan" | lolcat
-sleep 5
+echo " Pastikan Sudah Setting Chat ID anda di menu No. 15" | lolcat
+sleep 2
 echo " Dan Pastikan Sudah Start Bot @GDStore_bot " | lolcat
-sleep 10
+sleep 5
 echo Membuat Directory
 mkdir /root/backup
 sleep 1
@@ -98,6 +98,7 @@ cp -r /usr/local/shadowsocksr/ backup/shadowsocksr
 cp -r /home/vps/public_html backup/public_html
 cd /root
 clear
+echo "dalam proses" | lolcat
 zip -r $IP-$date.zip backup > /dev/null 2>&1
 rclone copy /root/$IP-$date.zip dr:backup/
 url=$(rclone link dr:backup/$IP-$date.zip)
@@ -114,6 +115,7 @@ Thank You For Using Our Services Script By GDSTore :)
 Your Link = $link"
 rm -rf /root/backup
 rm -r /root/$IP-$date.zip
+clear
 echo "Done"
 echo "Please Check Bot Telegram Or Copy Under Text" | lolcat
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
