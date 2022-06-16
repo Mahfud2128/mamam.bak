@@ -90,6 +90,7 @@ cp -r /usr/local/shadowsocksr/ backup/shadowsocksr
 cp -r /home/vps/public_html backup/public_html
 cd /root
 clear
+echo "dalam proses"
 zip -r $IP-$date.zip backup > /dev/null 2>&1
 rclone copy /root/$IP-$date.zip dr:backup/
 url=$(rclone link dr:backup/$IP-$date.zip)
@@ -106,6 +107,7 @@ If you want to restore data, please enter the link above.
 Thank You For Using Our Services" | mail -s "Backup Data" $email
 rm -rf /root/backup
 rm -r /root/$IP-$date.zip
+clear
 echo "Done"
 echo "Please Check Your Email" | lolcat
 echo $link | lolcat
