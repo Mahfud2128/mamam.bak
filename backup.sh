@@ -89,6 +89,7 @@ cp -r /etc/trojan backup/trojan
 cp -r /usr/local/shadowsocksr/ backup/shadowsocksr
 cp -r /home/vps/public_html backup/public_html
 cd /root
+clear
 zip -r $IP-$date.zip backup > /dev/null 2>&1
 rclone copy /root/$IP-$date.zip dr:backup/
 url=$(rclone link dr:backup/$IP-$date.zip)
