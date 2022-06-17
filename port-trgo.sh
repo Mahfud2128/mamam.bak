@@ -15,7 +15,7 @@ fi
 cek=$(netstat -nutlp | grep -w $trgo2)
 if [[ -z $cek ]]; then
 sed -i "s/$trgo/$trgo2/g" /etc/trojan-go/config.json
-sed -i "s/   - TrojanGo                  : $trgo/   - TrojanGo                  : $trgo2/g" /root/log-install.txt
+sed -i "s/   - TrojanGo                : $trgo/   - TrojanGo                : $trgo2/g" /root/log-install.txt
 iptables -D INPUT -m state --state NEW -m tcp -p tcp --dport $trgo -j ACCEPT
 iptables -D INPUT -m state --state NEW -m udp -p udp --dport $trgo -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport $trgo2 -j ACCEPT
