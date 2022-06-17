@@ -12,7 +12,7 @@ domain=$(cat /etc/v2ray/domain)
 else
 domain=$IP
 fi
-tr="$(cat ~/log-install.txt | grep -i Trojan | cut -d: -f2|sed 's/ //g')"
+tr="$(cat ~/log-install.txt | grep -i TrojanGFW | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
                 echo -e "Name : Create Trojan Account"
                 echo -e "=================================" | lolcat
