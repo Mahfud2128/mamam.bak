@@ -368,7 +368,7 @@ wget -O change-port "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/ma
 wget -O port-ovpn "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-ovpn.sh"
 wget -O port-ssl "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-ssl.sh"
 wget -O port-wg "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ipvps"
-wget -O port-tr "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-tr.sh"
+wget -O port-tr "https://raw.githubusercontent.com/Mahfud2128/mamam/main/port-tr.sh"
 wget -O port-sstp "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-sstp.sh"
 wget -O port-squid "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-squid.sh"
 wget -O port-ws "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-ws.sh"
