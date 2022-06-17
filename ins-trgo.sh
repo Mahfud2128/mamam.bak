@@ -86,7 +86,7 @@ cat <<EOF > /etc/trojan-go/config.json
 {
     "run_type": "server",
     "local_addr": "0.0.0.0",
-    "local_port": 2096,
+    "local_port": 2095,
     "remote_addr": "127.0.0.1",
     "remote_port": 81,
     "log_level": 1,
