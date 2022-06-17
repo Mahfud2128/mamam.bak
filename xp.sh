@@ -150,7 +150,6 @@ sed -i "/^### $user $exp/,/^},{/d" /etc/xray/vmessgrpc.json
 sed -i "/^### $user $exp/,/^},{/d" /etc/xray/vlessgrpc.json
 rm -f /etc/v2ray/$user-tls.json
 fi
-done
 systemctl restart vmess-grpc
 systemctl restart vless-grpc
 data=( `cat /etc/trojan-go/config.json | grep '^###' | cut -d ' ' -f 2`);
