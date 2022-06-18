@@ -379,7 +379,7 @@ wget -O swap "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/swap
 wget -O user-limit "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/user-limit.sh"
 wget -O auto-reboot "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/auto-reboot.sh"
 wget -O running "https://raw.githubusercontent.com/Mahfud2128/mamam/main/running.sh"
-wget -O update "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/update.sh"
+wget -O update "https://raw.githubusercontent.com/Mahfud2128/mamam/main/update.sh"
 wget -O cfd "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/cfd.sh"
 wget -O cff "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/cff.sh"
 wget -O cfh "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/cfh.sh"
@@ -449,6 +449,7 @@ chmod +x log-ws
 
 echo "0 5 * * * root clear-log" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
+echo "0 5 * * * autoreboot" /etc/crontab
 # remove unnecessary files
 cd
 apt autoclean -y
