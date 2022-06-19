@@ -456,7 +456,7 @@ fi
 
 echo "0 5 * * * root clear-log" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
-echo "0 5 * * * reboot_otomatis" /etc/crontab
+echo "0 5 * * * reboot_otomatis" >> /etc/crontab
 # remove unnecessary files
 cd
 apt autoclean -y
