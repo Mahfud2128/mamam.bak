@@ -126,7 +126,7 @@ echo -e   " $bl ║\e[m$bd 28$bl]\e[m$bd Clear Log"
 echo -e   " $bl ║\e[m$bd 29$bl]\e[m$bd Restart All Service"
 echo -e   " $bl ║\e[m$bd 30$bl]\e[m$bd Change Banner"
 echo -e   " $bl ║\e[m$bd 31$bl]\e[m$bd Cek Bandwith"
-echo -e   " $bl ║\e[m$bd 32$bl]\e[m$bd Reset Server"
+echo -e   " $bl ║\e[m$bd 32$bl]\e[m$bd Delete Expired All Acoount"
 echo -e   " $bl ║\e[m$bd 33$bl]\e[m$bd Update To Last Version                                 ╥"
 echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" | lolcat
 echo -e   "  ║ x)   Exit                                                  ║\e[m" | lolcat
@@ -229,7 +229,7 @@ nano /etc/issue.net
 bw
 ;;
 32)
-resett
+xp
 ;;
 33)
 update
