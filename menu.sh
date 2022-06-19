@@ -105,7 +105,7 @@ echo -e  " $bl ║\e[m$bd 10$bl]\e[m$bd Panel V2Ray GRPC"
 echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" | lolcat
 echo -e   "  ║                       ┃ SYSTEM MENU ┃                       ║\e[m" | lolcat 
 echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" | lolcat
-echo -e   " $mg ║\e[m$bd 11$bl]\e[m$bd Panel Domain"
+echo -e   " $mg ║\e[m$bd 11$bl]\e[m$bd Change Domain"
 echo -e   " $mg ║\e[m$bd 12$bl]\e[m$bd Change Port All Account"
 echo -e   " $mg ║\e[m$bd 13$bl]\e[m$bd Autobackup Data VPS"
 echo -e   " $mg ║\e[m$bd 14$bl]\e[m$bd Backup Data VPS Via Email"
@@ -166,7 +166,7 @@ trojaan
 vgrpc
 ;;
 11)
-domain
+add-host
 ;;
 12)
 change-port
