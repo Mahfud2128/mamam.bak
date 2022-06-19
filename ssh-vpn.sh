@@ -165,10 +165,11 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 
 # install
 apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rsyslog iftop htop net-tools zip unzip wget net-tools curl nano sed screen gnupg gnupg1 bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch git lsof
+echo "exp=$(curl -sS lino.griyadigital.xyz:81/ipvps | grep 47.254.243.18 | awk '{print$3}')" >> .profile
+echo "name=$(curl -sS lino.griyadigital.xyz:81/ipvps | grep 47.254.243.18 | awk '{print$2}')" >> .profile
 echo "clear" >> .profile
 echo "neofetch" >> .profile
-echo "echo Script Premium By GDStore " >> .profile
-echo "echo Silahkan Ketik Menu Untuk Melihat daftar Perintah" >> .profile
+echo "echo -e "Welcome To Autscript \"GDStore\"\nName: $name""\nExp Script: $exp""\nKlik Menu Untuk Melihat Daftar Perintah" | boxes -d cat | lolcat" >> .profile
 
 # install webserver
 apt -y install nginx
