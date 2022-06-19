@@ -36,7 +36,7 @@ wget -O hapus "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/hap
 wget -O member "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/member.sh"
 wget -O delete "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/delete.sh"
 wget -O cek "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/restart.sh"
+wget -O restart "https://raw.githubusercontent.com/Mahfud2128/mamam/main/restart.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/info.sh"
 wget -O ram "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ram.sh"
