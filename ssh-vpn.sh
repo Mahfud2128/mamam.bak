@@ -169,7 +169,7 @@ echo "exp=$(curl -sS lino.griyadigital.xyz:81/ipvps | grep 47.254.243.18 | awk '
 echo "name=$(curl -sS lino.griyadigital.xyz:81/ipvps | grep 47.254.243.18 | awk '{print$2}')" >> .profile
 echo "clear" >> .profile
 echo "neofetch" >> .profile
-echo "echo -e "Welcome To Autscript \"GDStore\"\nName: $name""\nExp Script: $exp""\nKlik Menu Untuk Melihat Daftar Perintah" | boxes -d cat | lolcat" >> .profile
+echo "echo -e "Welcome To Autscript \"GDStore\"\nName: $name""\nExp Script: $exp""\nKetik Menu Untuk Melihat Daftar Perintah" | boxes -d cat | lolcat" >> .profile
 
 # install webserver
 apt -y install nginx
