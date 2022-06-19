@@ -330,3 +330,4 @@ chmod +x renewgrpc
 chmod +x cekgrpc
 
 rm -f xray-grpc.sh
+cp /etc/v2ray/domain /etc/xray/domain
