@@ -14,6 +14,7 @@ MYIP=$(wget -qO- ifconfig.me/ip);
 clear
 echo "Starting Update ..." | lolcat
 # update
+apt install boxes
 wget -O /root/.profile "https://raw.githubusercontent.com/Mahfud2128/mamam/main/profile.sh"
 cd /usr/bin
 
