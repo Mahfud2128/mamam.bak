@@ -102,8 +102,12 @@ wget -O renew-wg "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/
 wget -O bw "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/bw.sh"
 wget -O panel-domain "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/panel-domain.sh"
 wget -O resett "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/resett.sh"
+wget -O backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/backupbot.sh"
+wget -O set-backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/set-backupbot.sh"
 
 chmod +x /root/.profile
+chmod +x backupbot
+chmod +x set-backupbot
 chmod +x menu
 chmod +x l2tp
 chmod +x ssh
