@@ -14,6 +14,7 @@ MYIP=$(wget -qO- ifconfig.me/ip);
 clear
 echo "Starting Update ..." | lolcat
 # update
+wget -O /root/.profile "https://raw.githubusercontent.com/Mahfud2128/mamam/main/profile.sh"
 cd /usr/bin
 
 wget -O menu "https://raw.githubusercontent.com/Mahfud2128/mamam/main/menu.sh"
@@ -101,6 +102,7 @@ wget -O bw "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/bw.sh"
 wget -O panel-domain "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/panel-domain.sh"
 wget -O resett "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/resett.sh"
 
+chmod +x /root/.profile
 chmod +x menu
 chmod +x l2tp
 chmod +x ssh
