@@ -99,7 +99,7 @@ iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save > /dev/null
 netfilter-persistent reload > /dev/null
-systemctl restart v2ray > /dev/null
+systemctl restart vmess-grpc > /dev/null
 clear
 echo -e "${GREEN}Succesfully Changed XRay VMess GRPC Port To $tls1${NC}"
 else
@@ -123,7 +123,7 @@ iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save > /dev/null
 netfilter-persistent reload > /dev/null
-systemctl restart v2ray@none > /dev/null
+systemctl restart vless-grpc > /dev/null
 clear
 echo -e "${GREEN}Succesfully Change XRay VLess GRPC Port To $none1${NC}"
 else
