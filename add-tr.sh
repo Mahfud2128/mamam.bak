@@ -29,7 +29,7 @@ read -p "Expired (days): " masaaktif
 sed -i '/"'""$uuid""'"$/a\,"'""$user""'"' /etc/trojan/config.json
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e "### $user $exp" >> /etc/trojan/akun.conf
-systemctl restart trojan
+
 trojanlink="trojan://${user}@${domain}:${tr}"
 idtele=$(cat /root/.config/idtele)
 CHATID="$idtele"
@@ -47,6 +47,7 @@ link           : ${trojanlink}
 =================================
 Expired On     : $exp"
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
+systemctl restart trojan
 clear
 echo -e ""
 echo -e "Name : Trojan"
