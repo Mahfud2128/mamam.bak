@@ -29,7 +29,7 @@ read -p "Expired (days) : " masaaktif
 sed -i '/"'""$uuid""'"$/a\,"'""$user""'"' /etc/trojan-go/config.json
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e "### $user $exp" >> /etc/trojan-go/akun.conf
-systemctl restart trojan-go.service
+
 trojangolink="trojan-go://${user}@${domain}:${trojango}/?sni=${domain}&type=ws&host=${domain}&path=/trojango&encryption=none#${user}"
 idtele=$(cat /root/.config/idtele)
 CHATID="$idtele"
@@ -49,6 +49,7 @@ Link TROJAN-GO : trojan-go://${user}@${domain}:${trojango}/?sni=${domain}DANtype
 Kata DAN ubah menjadi symbol "
 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
+systemctl restart trojan-go.service
 clear
 echo -e "Name : Trojan-GO" 
 echo -e "===================================" | lolcat
