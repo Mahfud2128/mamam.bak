@@ -30,7 +30,7 @@ sed -i '/"'""$uuid""'"$/a\,"'""$user""'"' /etc/trojan-go/config.json
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e "### $user $exp" >> /etc/trojan-go/akun.conf
 systemctl restart trojan-go.service
-trojangolink="trojan://${user}@${domain}:${trojango}/?sni=${domain}&type=wsDANhost=${domain}DANpath=/trojangoDANencryption=none#${user}"
+trojangolink="trojan://${user}@${domain}:${trojango}/?sni=${domain}&type=ws&host=${domain}&path=/trojangoDANencryption=none#${user}"
 idtele=$(cat /root/.config/idtele)
 CHATID="$idtele"
 KEY="5437053023:AAHl82bSN55xSrYa4YnmSfgcbrR6uzQUkww"
