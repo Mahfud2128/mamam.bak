@@ -122,8 +122,9 @@ vmesslink2="vmess://$(base64 -w 0 /etc/v2ray/$user-none.json)"
 systemctl restart v2ray
 systemctl restart v2ray@none
 service cron restart
-CHATID="5325141986"
-KEY="5318532626:AAH9spkuFm00gnYQAXNwKkvoeH_MTWn0u1A"
+idtele=$(cat /root/.config/idtele)
+CHATID="$idtele"
+KEY="5437053023:AAHl82bSN55xSrYa4YnmSfgcbrR6uzQUkww"
 TIME="10"
 BRL="https://api.telegram.org/bot$KEY/sendMessage"
 
