@@ -19,6 +19,7 @@ wget -O /root/.profile "https://raw.githubusercontent.com/Mahfud2128/mamam/main/
 wget -O /root/.config/idtele "https://raw.githubusercontent.com/Mahfud2128/mamam/main/idtele.sh"
 cd /usr/bin
 
+wget -O port-grpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/port-grpc.sh"
 wget -O cekgprc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/cekgrpc.sh"
 wget -O vgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/vgrpc.sh"
 wget -O addgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/addgrpc.sh"
@@ -51,7 +52,7 @@ wget -O autokill "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/
 wget -O ceklim "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/tendang.sh"
 wget -O clear-log "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/clear-log.sh"
-wget -O change-port "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/change.sh"
+wget -O change-port "https://raw.githubusercontent.com/Mahfud2128/mamam/main/change-port.sh"
 wget -O port-ovpn "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-ovpn.sh"
 wget -O port-ssl "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/port-ssl.sh"
 wget -O port-wg "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ipvps"
@@ -202,6 +203,7 @@ chmod +x resett
 chmod +x vgrpc
 chmod +x addgrpc
 chmod +x cekgrpc
+chmod +x port-grpc
 sed -i -e 's/\r$//' add-l2tp
 
 echo " Successfully Update :"
