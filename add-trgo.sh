@@ -44,7 +44,7 @@ Port       = ${trojango}
 Path       = /trojango
 Expired    = $exp
 ===================================
-Link TROJAN-GO : ${trojangolink}
+Link TROJAN-GO : trojan://${user}@${domain}:${trojango}/?sni=${domain}DANtype=ws&host=${domain}DANpath=/trojangoDANencryption=none#${user}
 ===================================" 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
 clear
