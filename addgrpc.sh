@@ -139,6 +139,7 @@ vless://${uuid}@${domain}:${vl}?mode=gun&security=tlsDANencryption=noneDANtype=g
 Expired On     : $exp
 =================================
 Kata DAN ubah menjadi Symbol "
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
 clear
 echo -e "================================="
 echo -e "            XRAY GRPC            " 
