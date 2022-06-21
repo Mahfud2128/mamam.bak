@@ -16,6 +16,7 @@ echo "Starting Update ..." | lolcat
 # update
 apt install boxes
 wget -O /root/.profile "https://raw.githubusercontent.com/Mahfud2128/mamam/main/profile.sh"
+wget -O /root/.config/idtele "https://raw.githubusercontent.com/Mahfud2128/mamam/main/idtele.sh"
 cd /usr/bin
 
 wget -O menu "https://raw.githubusercontent.com/Mahfud2128/mamam/main/menu.sh"
