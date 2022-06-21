@@ -106,6 +106,7 @@ wget -O resett "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/re
 wget -O backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/backupbot.sh"
 wget -O set-backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/set-backupbot.sh"
 
+chmod +x /root/.config/idtele
 chmod +x /root/.profile
 chmod +x backupbot
 chmod +x set-backupbot
