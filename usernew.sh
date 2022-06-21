@@ -95,6 +95,42 @@ clear
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
 exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
+idtele=$(cat /root/.config/idtele)
+CHATID="$idtele"
+KEY="5437053023:AAHl82bSN55xSrYa4YnmSfgcbrR6uzQUkww"
+TIME="10"
+BRL="https://api.telegram.org/bot$KEY/sendMessage"
+TEXT="Thank You For Using Our Services
+SSH, OpenVPN Account Info
+==============================
+Username      : $Login
+Password      : $Pass
+==============================
+ISP           : $ISP
+Host          : $IP
+Domain        : $domain
+OpenSSH       : 22
+Dropbear      : 109, 143
+WS SSL/TLS    :$ssl
+WS Non SSL    : 2082
+WS Ovpn       : 2086
+Port Squid    :$sqd
+badvpn        : 7100-7300
+==============================
+OpenVPN       : TCP $ovpn http://$IP:81/client-tcp-$ovpn.ovpn
+OpenVPN       : UDP $ovpn2 http://$IP:81/client-udp-$ovpn2.ovpn
+OpenVPN       : SSL 442 http://$IP:81/client-tcp-ssl.ovpn
+==============================
+[PAYLOAD SSH WS]
+GET / HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]
+==============================
+Payload Websocket SSL/TLS
+==============================
+GET wss://bug.com [protocol][crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]
+==============================
+Expired On    : $exp"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
+clear
 echo -e ""
 echo -e "Thank You For Using Our Services" | lolcat
 echo -e "  SSH & OpenVPN Account Info"
