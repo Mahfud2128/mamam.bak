@@ -44,8 +44,10 @@ Port       = ${trojango}
 Path       = /trojango
 Expired    = $exp
 ===================================
-Link TROJAN-GO : trojan://${user}@${domain}:${trojango}/?sni=${domain}DANtype=ws&host=${domain}DANpath=/trojangoDANencryption=none#${user}
-===================================" 
+Link TROJAN-GO : trojan://${user}@${domain}:${trojango}/?sni=${domain}DANtype=wsDANhost=${domain}DANpath=/trojangoDANencryption=none#${user}
+===================================
+Kata DAN ubah menjadi symbol "
+
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
 clear
 echo -e "Name : Trojan-GO" 
