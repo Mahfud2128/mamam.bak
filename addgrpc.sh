@@ -134,7 +134,7 @@ Link VMess GRPC  :
 ${vmesslink1}
 =================================
 Link VLess GRPC  : 
-vless://${uuid}@${domain}:${vl}?mode=gun&security=tlsDANencryption=noneDANtype=grpcDANserviceName=GunService&sni=${domain}#$user
+vless://${uuid}@${domain}:${vl}?mode=gunDANsecurity=tlsDANencryption=noneDANtype=grpcDANserviceName=GunServiceDANsni=${domain}#$user
 =================================
 Expired On     : $exp
 =================================
