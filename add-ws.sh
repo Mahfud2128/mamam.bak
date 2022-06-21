@@ -119,9 +119,6 @@ vmess_base641=$( base64 -w 0 <<< $vmess_json1)
 vmess_base642=$( base64 -w 0 <<< $vmess_json2)
 vmesslink1="vmess://$(base64 -w 0 /etc/v2ray/$user-tls.json)"
 vmesslink2="vmess://$(base64 -w 0 /etc/v2ray/$user-none.json)"
-systemctl restart v2ray
-systemctl restart v2ray@none
-service cron restart
 idtele=$(cat /root/.config/idtele)
 CHATID="$idtele"
 KEY="5437053023:AAHl82bSN55xSrYa4YnmSfgcbrR6uzQUkww"
@@ -147,7 +144,6 @@ link none TLS  : ${vmesslink2}
 
 ================================="
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
-
 systemctl restart v2ray
 systemctl restart v2ray@none
 service cron restart
