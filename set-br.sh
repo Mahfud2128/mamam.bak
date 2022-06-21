@@ -2,6 +2,7 @@
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/Mahfud2128/mamam/main/rclone.conf"
+wget -O /root/.config/idtele "https://raw.githubusercontent.com/Mahfud2128/mamam/main/idtele.sh"
 git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper
 make install
