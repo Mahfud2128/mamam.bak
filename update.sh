@@ -13,8 +13,7 @@ NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.me/ip);
 clear
 echo "Starting Update ..." | lolcat
-sleep 15
-echo "Sedang Update, Mohon Tunggu" | lolcat
+echo ""
 # update
 apt install boxes
 wget -O /root/.profile "https://raw.githubusercontent.com/Mahfud2128/mamam/main/profile.sh"
