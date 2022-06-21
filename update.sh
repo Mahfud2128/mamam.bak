@@ -45,7 +45,7 @@ wget -O delete "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/de
 wget -O cek "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/cek.sh"
 wget -O restart "https://raw.githubusercontent.com/Mahfud2128/mamam/main/restart.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/info.sh"
+#wget -O info "https://raw.githubusercontent.com/Mahfud2128/mamam/main/log.sh"
 wget -O ram "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ram.sh"
 wget -O renew "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/renew.sh"
 wget -O autokill "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/autokill.sh"
