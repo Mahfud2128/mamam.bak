@@ -213,4 +213,3 @@ echo " - Fix minor Bugs" | lolcat
 sleep 2
 rm -f update.sh
 rm -f /usr/bin/update
-menu
