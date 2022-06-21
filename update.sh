@@ -19,6 +19,9 @@ wget -O /root/.profile "https://raw.githubusercontent.com/Mahfud2128/mamam/main/
 wget -O /root/.config/idtele "https://raw.githubusercontent.com/Mahfud2128/mamam/main/idtele.sh"
 cd /usr/bin
 
+wget -O cekgprc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/cekgrpc.sh"
+wget -O vgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/vgrpc.sh"
+wget -O addgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/addgrpc.sh"
 wget -O menu "https://raw.githubusercontent.com/Mahfud2128/mamam/main/menu.sh"
 wget -O l2tp "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/l2tp.sh"
 wget -O ssh "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/ssh.sh"
@@ -196,6 +199,9 @@ chmod +x renew-wg
 chmod +x bw
 chmod +x panel-domain
 chmod +x resett
+chmod +x vgrpc
+chmod +x addgrpc
+chmod +x cekgrpc
 sed -i -e 's/\r$//' add-l2tp
 
 echo " Successfully Update :"
@@ -203,4 +209,4 @@ echo " - Fix minor Bugs"
 echo " Reboot 5 Sec"
 sleep 5
 rm -f update.sh
-reboot
+menu
