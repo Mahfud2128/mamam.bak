@@ -61,7 +61,7 @@ neofetch
 echo -e "Silahkan cek CHAT ID anda di tele @get_id_bot" | lolcat
 echo -e "lalu klik start atau ketik /my_id" | lolcat
 echo -e ""
-ID=$(cat /root/.config/idtele
+ID=$(cat /root/.config/idtele)
 
 read -p "Masukkan Chat ID Telegram Anda=" idbaru
 
