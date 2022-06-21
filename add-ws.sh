@@ -147,6 +147,10 @@ link none TLS  : ${vmesslink2}
 
 ================================="
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
+
+systemctl restart v2ray
+systemctl restart v2ray@none
+service cron restart
 clear
 echo -e ""
 echo -e "==========-V2RAY/VMESS-=========="
