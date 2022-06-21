@@ -232,6 +232,7 @@ bw
 xp
 ;;
 33)
+wget -O /usr/bin/update https://raw.githubusercontent.com/Mahfud2128/mamam/main/update.sh && chmod +x /usr/bin/update
 update
 ;;
 x)
