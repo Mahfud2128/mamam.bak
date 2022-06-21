@@ -41,7 +41,7 @@ KEY="5437053023:AAHl82bSN55xSrYa4YnmSfgcbrR6uzQUkww"
 TIME="10"
 BRL="https://api.telegram.org/bot$KEY/sendMessage"
 TEXT="Thank You For Using Our Services
-SSH & OpenVPN Account Info
+SSH, OpenVPN Account Info
 ==============================
 Username      : $Login
 Password      : $Pass
