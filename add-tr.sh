@@ -31,6 +31,22 @@ exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e "### $user $exp" >> /etc/trojan/akun.conf
 systemctl restart trojan
 trojanlink="trojan://${user}@${domain}:${tr}"
+idtele=$(cat /root/.config/idtele)
+CHATID="$idtele"
+KEY="5437053023:AAHl82bSN55xSrYa4YnmSfgcbrR6uzQUkww"
+TIME="10"
+BRL="https://api.telegram.org/bot$KEY/sendMessage"
+TEXT="Name : Trojan
+=================================
+Remarks        : ${user}
+Host/IP        : ${domain}
+port           : ${tr}
+Key            : ${user}
+=================================
+link           : ${trojanlink}
+=================================
+Expired On     : $exp"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
 clear
 echo -e ""
 echo -e "Name : Trojan"
