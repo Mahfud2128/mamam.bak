@@ -31,6 +31,22 @@ exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e "### $user $exp" >> /etc/trojan-go/akun.conf
 systemctl restart trojan-go.service
 trojangolink="trojan-go://${uuid}@${domain}:${trojango}/?sni=${domain}&type=ws&host=${domain}&path=/trojango&encryption=none#${user}"
+idtele=$(cat /root/.config/idtele)
+CHATID="$idtele"
+KEY="5437053023:AAHl82bSN55xSrYa4YnmSfgcbrR6uzQUkww"
+TIME="10"
+BRL="https://api.telegram.org/bot$KEY/sendMessage"
+TEXT="Name : Trojan-GO
+===================================
+Remarks    = ${user}
+IP / Host  = ${domain}
+Port       = ${trojango}
+Path       = /trojango
+Expired    = $exp
+===================================
+Link TROJAN-GO : ${trojangolink}
+===================================" 
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
 clear
 echo -e "Name : Trojan-GO" 
 echo -e "===================================" | lolcat
