@@ -57,7 +57,8 @@ red "Permission Denied!"
 exit 0
 fi
 
-CHATID="5325141986"
+idtele=$(cat /root/.config/idtele)
+CHATID="idtele"
 KEY="5318532626:AAH9spkuFm00gnYQAXNwKkvoeH_MTWn0u1A"
 TIME="10"
 BRL="https://api.telegram.org/bot$KEY/sendMessage"
