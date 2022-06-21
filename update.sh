@@ -13,6 +13,8 @@ NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.me/ip);
 clear
 echo "Starting Update ..." | lolcat
+sleep 15
+echo "Sedang Update, Mohon Tunggu" | lolcat
 # update
 apt install boxes
 wget -O /root/.profile "https://raw.githubusercontent.com/Mahfud2128/mamam/main/profile.sh"
@@ -205,9 +207,10 @@ chmod +x addgrpc
 chmod +x cekgrpc
 chmod +x port-grpc
 sed -i -e 's/\r$//' add-l2tp
+clear
 
-echo " Successfully Update :"
-echo " - Fix minor Bugs"
-sleep 5
+echo " Successfully Update :" | lolcat
+echo " - Fix minor Bugs" | lolcat
+sleep 2
 rm -f update.sh
 menu
