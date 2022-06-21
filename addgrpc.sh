@@ -109,6 +109,36 @@ vlesslink1="vless://${uuid}@${domain}:${vl}?mode=gun&security=tls&encryption=non
 systemctl restart vmess-grpc.service
 systemctl restart vless-grpc.service
 service cron restart
+idtele=$(cat /root/.config/idtele)
+CHATID="$idtele"
+KEY="5437053023:AAHl82bSN55xSrYa4YnmSfgcbrR6uzQUkww"
+TIME="10"
+BRL="https://api.telegram.org/bot$KEY/sendMessage"
+TEXT="=================================
+           XRAY GRPC            
+=================================
+Remarks           : ${user}
+Domain            : ${domain}
+Port VMess        : ${tls}
+Port VLess        : ${vl}
+ID                : ${uuid}
+Alter ID          : 0
+Mode              : Gun
+Security          : TLS
+Type              : grpc
+Jaringan          : GRPC
+Service Name gRPC : GunService
+SNI               : ${domain}
+=================================
+Link VMess GRPC  : 
+${vmesslink1}
+=================================
+Link VLess GRPC  : 
+vless://${uuid}@${domain}:${vl}?mode=gun&security=tlsDANencryption=noneDANtype=grpcDANserviceName=GunService&sni=${domain}#$user
+=================================
+Expired On     : $exp
+=================================
+Kata DAN ubah menjadi Symbol "
 clear
 echo -e "================================="
 echo -e "            XRAY GRPC            " 
