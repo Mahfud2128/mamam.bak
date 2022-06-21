@@ -69,5 +69,5 @@ sed -i "s/$ID/$idbaru/g" /root/.config/idtele
 
 echo -e ""
 echo -e "Sebelum Backup, Cari Bot @GDStore_bot" | lolcat
-echo -e "Dan Cari Bot @GDnotif_bot Untuk Menerima Notifikasi Create User | lolcat
+echo -e "Dan Cari Bot @GDnotif_bot Untuk Menerima Notifikasi Create User" | lolcat
 echo -e "lalu start" | lolcat
