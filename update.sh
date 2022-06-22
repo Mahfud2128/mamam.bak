@@ -110,6 +110,7 @@ wget -O panel-domain "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/m
 wget -O resett "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/resett.sh"
 wget -O backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/backupbot.sh"
 wget -O set-backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/set-backupbot.sh"
+wget -O del-trgo "https://raw.githubusercontent.com/Mahfud2128/mamam/main/del-trgo.sh"
 
 chmod +x /root/.config/idtele
 chmod +x /root/.profile
@@ -205,6 +206,7 @@ chmod +x vgrpc
 chmod +x addgrpc
 chmod +x cekgrpc
 chmod +x port-grpc
+chmod +x del-trgo
 sed -i -e 's/\r$//' add-l2tp
 clear
 
