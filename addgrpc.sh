@@ -131,11 +131,10 @@ Link VMess GRPC  :
 ${vmesslink1}
 =================================
 Link VLess GRPC  : 
-vless://${uuid}@${domain}:${vl}?mode=gunDANsecurity=tlsDANencryption=noneDANtype=grpcDANserviceName=GunServiceDANsni=${domain}#$user
+vless://${uuid}@${domain}:${vl}?mode=gun%26security=tls%26encryption=none%26type=grpc%26serviceName=GunService%26sni=${domain}#$user
 =================================
 Expired On     : $exp
-=================================
-Kata DAN ubah menjadi Symbol "
+================================="
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $BRL >/dev/null
 systemctl restart vmess-grpc.service
 systemctl restart vless-grpc.service
