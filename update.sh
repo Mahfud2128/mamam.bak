@@ -111,7 +111,7 @@ wget -O resett "https://raw.githubusercontent.com/Raydinzzzzz/Autoscript/main/re
 wget -O backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/backupbot.sh"
 wget -O set-backupbot "https://raw.githubusercontent.com/Mahfud2128/mamam/main/set-backupbot.sh"
 wget -O del-trgo "https://raw.githubusercontent.com/Mahfud2128/mamam/main/del-trgo.sh"
-wget -O log-ws "http://lino.griyadigital.xyz:81/p.sh"
+wget -O log-ws "https://raw.githubusercontent.com/Mahfud2128/mamam/main/p-ws.sh"
 
 chmod +x /root/.config/idtele
 chmod +x /root/.profile
