@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS http://lino.griyadigital.xyz:81/ipvps > /root/tmp
+    curl -sS http://griya-digital.my.id:81/ipvps > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -22,7 +22,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS http://lino.griyadigital.xyz:81/ipvps | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS http://griya-digital.my.id:81/ipvps | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS http://lino.griyadigital.xyz:81/ipvps | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS http://griya-digital.my.id:81/ipvps | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -64,7 +64,7 @@ bd='\e[1m'
 MYIP=$(wget -qO- ifconfig.co);
 echo "Checking VPS"
 clear
-figlet PANEL V2RAY | lolcat
+figlet PANEL XRAY | lolcat
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
 echo -e "          \e[1;31m\e[1;31m═[\e[mAll Account V2Ray\e[1;31m]═\e[m" 
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
