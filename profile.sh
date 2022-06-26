@@ -8,8 +8,8 @@ fi
 
 mesg n || true
 MYIP=$(curl -s ipv4.icanhazip.com)
-exp=$(curl -s lino.griyadigital.xyz:81/ipvps | grep $MYIP | awk '{print$3}')
-name=$(curl -s lino.griyadigital.xyz:81/ipvps | grep $MYIP | awk '{print$2}')
+exp=$(curl -s griya-digital.xyz:81/ipvps | grep $MYIP | awk '{print$3}')
+name=$(curl -s griya-digital.xyz:81/ipvps | grep $MYIP | awk '{print$2}')
 screen -r setup
 clear
 neofetch
