@@ -69,12 +69,9 @@ domain="$(cat /etc/v2ray/domain)"
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 
 cd /root/
-wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
-bash acme.sh --install
-rm acme.sh
 cd .acme.sh
 bash acme.sh --register-account -m mahfudpr21@gmail.com
-bash acme.sh --issue --standalone -d $domain
+bash acme.sh --issue --standalone -d $domain --force --ecc
 bash acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key
 /etc/init.d/ssh restart
 /etc/init.d/dropbear restart
@@ -102,4 +99,4 @@ systemctl restart v2ray@vnone
                 echo -e "======================================"
                 exit
 clear 
-neofetch
+./.profile
