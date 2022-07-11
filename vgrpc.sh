@@ -66,7 +66,7 @@ echo "Checking VPS"
 clear
 figlet PANEL XRAY | lolcat
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
-echo -e "          \e[1;31m\e[1;31m═[\e[mAll Account V2Ray\e[1;31m]═\e[m" 
+echo -e "          \e[1;31m\e[1;31m═[\e[mAll Account XRay\e[1;31m]═\e[m" 
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
 echo -e "$bd 1$bl]\e[m $bd Create Xray GRPC Account"
 echo -e "$bd 2$bl]\e[m $bd Delete Xray GRPC  Account"
