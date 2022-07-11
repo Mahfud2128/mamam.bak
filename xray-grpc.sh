@@ -1,6 +1,6 @@
 #!/bin/bash
 # XRay Installation
-# SL Script
+# GD Script
 # ==================================
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
@@ -271,6 +271,62 @@ cat > /etc/xray/vlessgrpc.json << END
 }
 END
 
+cat > /etc/xray/trojangrpc.json << END
+{
+    "log": {
+            "access": "/var/log/xray/access6.log",
+        "error": "/var/log/xray/error.log",
+        "loglevel": "info"
+    },
+    "inbounds": [
+        {
+            "port": 653,
+            "protocol": "trojan",
+            "settings": {
+                "clients": [
+                    {
+                        "password": "${uuid}"
+
+#xtrgrpc
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "gun",
+                "security": "tls",
+                "tlsSettings": {
+                    "serverName": "$domain",
+                    "alpn": [
+                        "h2"
+                    ],
+                    "certificates": [
+                        {
+                            "certificateFile": "/etc/v2ray/vray.crt",
+                            "keyFile": "/etc/v2ray/v2ray.key"
+                        }
+                    ]
+                },
+                "grpcSettings": {
+                    "serviceName": "GunService"
+                }
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom",
+            "tag": "direct"
+        }
+    ]
+}
+END
+
+cat > /etc/xray/akuntrgrpc.conf << EOF
+#xray-trojangrpc user
+EOF
+
+
 
 cat > /etc/systemd/system/vmess-grpc.service << EOF
 [Unit]
@@ -304,6 +360,22 @@ RestartPreventExitStatus=23
 WantedBy=multi-user.target
 EOF
 
+cat > /etc/systemd/system/trgrpc.service << EOF
+[Unit]
+Description=XRay Trojan Grpc Service
+Documentation=https://speedtest.net https://github.com/XTLS/Xray-core
+After=network.target nss-lookup.target
+[Service]
+User=root
+NoNewPrivileges=true
+ExecStart=/usr/local/bin/xray -config /etc/xray/trojangrpc.json
+RestartPreventExitStatus=23
+
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2056 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2056 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2096 -j ACCEPT
@@ -324,10 +396,21 @@ wget -O delgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/delgrpc
 wget -O renewgrpc "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/grpc/renewgrpc.sh"
 wget -O cekgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/cekgrpc.sh"
 
+wget -O addtrgrpc "https://raw.githubusercontent.com/izhanworks/addongrpc/main/addtrgrpc.sh"
+wget -O deltrgrpc "https://raw.githubusercontent.com/izhanworks/addongrpc/main/deltrgrpc.sh"
+wget -O cektrgrpc "https://raw.githubusercontent.com/izhanworks/addongrpc/main/cektrgrpc.sh"
+wget -O renewtrgrpc "https://raw.githubusercontent.com/izhanworks/addongrpc/main/renewtrgrpc.sh"
+
 chmod +x addgrpc
 chmod +x delgrpc
 chmod +x renewgrpc
 chmod +x cekgrpc
+
+chmod +x addtrgrpc
+chmod +x deltrgrpc
+chmod +x cektrgrpc
+chmod +x renewtrgrpc
+
 
 rm -f xray-grpc.sh
 cp /etc/v2ray/domain /etc/xray/domain
