@@ -380,6 +380,8 @@ iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2056 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2056 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2096 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2096 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 653 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 653 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
@@ -396,10 +398,10 @@ wget -O delgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/delgrpc
 wget -O renewgrpc "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/grpc/renewgrpc.sh"
 wget -O cekgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/cekgrpc.sh"
 
-wget -O addtrgrpc "https://raw.githubusercontent.com/izhanworks/addongrpc/main/addtrgrpc.sh"
-wget -O deltrgrpc "https://raw.githubusercontent.com/izhanworks/addongrpc/main/deltrgrpc.sh"
-wget -O cektrgrpc "https://raw.githubusercontent.com/izhanworks/addongrpc/main/cektrgrpc.sh"
-wget -O renewtrgrpc "https://raw.githubusercontent.com/izhanworks/addongrpc/main/renewtrgrpc.sh"
+wget -O addtrgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/addtrgrpc.sh"
+wget -O deltrgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/deltrgrpc.sh"
+wget -O cektrgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/cektrgrpc.sh"
+wget -O renewtrgrpc "https://raw.githubusercontent.com/Mahfud2128/mamam/main/renewtrgrpc.sh"
 
 chmod +x addgrpc
 chmod +x delgrpc
