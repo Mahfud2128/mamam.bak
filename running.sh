@@ -422,6 +422,6 @@ echo -e "Trojan GO   : $status_trgo"
 echo -e "Wireguard   : $status_wg"
 echo -e "Vmess GRPC  : $status_vmessgrpc"
 echo -e "Vless GRPC  : $status_vlessgrpc"
-echo -e "Trojan GRPC  : $status_trgrpc"
+echo -e "Trojan GRPC : $status_trgrpc"
 echo "------------------------------------------------------------------------" | lolcat 
 echo ""
