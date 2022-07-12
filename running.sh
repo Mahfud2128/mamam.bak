@@ -134,6 +134,7 @@ strgo=$(echo "${trgo}" | grep 'ActiveState=' | cut -f2 -d=)
 sswg=$(systemctl status wg-quick@wg0 | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 vmessgrpc_status=$(systemctl status vmess-grpc | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 vlessgrpc_status=$(systemctl status vless-grpc | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+trgrpc_status=$(systemctl status trgrpc | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 
 # Color Validation
 RED='\033[0;31m'
@@ -293,6 +294,14 @@ else
    status_sstp="${RED}SSTP Service Is Not Running ${NC}( Not Aktif )"
 fi
 
+# Status Service  TrojanGRPC 
+if [[ $trgrpc_status == "running" ]]; then 
+   status_trgrpc="${GREEN}Trojan GRPC Service Is Running${NC} ( Aktif )"
+else
+   status_trgrpc="${RED}Trojan GRPC Service Is Not Running${NC} ( Not Aktif )"
+fi
+
+
 # Ram Usage
 total_r2am=` grep "MemAvailable: " /proc/meminfo | awk '{ print $2}'`
 MEMORY=$(($total_r2am/1024))
@@ -413,5 +422,6 @@ echo -e "Trojan GO   : $status_trgo"
 echo -e "Wireguard   : $status_wg"
 echo -e "Vmess GRPC  : $status_vmessgrpc"
 echo -e "Vless GRPC  : $status_vlessgrpc"
+echo -e "Trojan GRPC  : $status_trgrpc"
 echo "------------------------------------------------------------------------" | lolcat 
 echo ""
