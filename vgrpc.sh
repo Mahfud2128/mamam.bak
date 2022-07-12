@@ -73,16 +73,16 @@ echo -e "$bd 2$bl]\e[m $bd Delete Xray GRPC  Account"
 echo -e "$bd 3$bl]\e[m $bd Renew Xray Account"
 echo -e "$bd 4$bl]\e[m $bd Check User Login Xray"
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
-echo -e "$bd 4$bl]\e[m $bd Create Trojan Grpc"
-echo -e "$bd 4$bl]\e[m $bd Delete User Trojan Grpc"
-echo -e "$bd 4$bl]\e[m $bd Check User Login Trojan Grpc"
-echo -e "$bd 4$bl]\e[m $bd Renew User Trojan Grpc"
+echo -e "$bd 5$bl]\e[m $bd Create Trojan Grpc"
+echo -e "$bd 6$bl]\e[m $bd Delete User Trojan Grpc"
+echo -e "$bd 7$bl]\e[m $bd Check User Login Trojan Grpc"
+echo -e "$bd 8$bl]\e[m $bd Renew User Trojan Grpc"
 echo -e ""
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
 echo -e " x)   MENU   \e[m"   | lolcat
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
 echo -e ""
-read -p "     Please Input Number  [1-4 or x] :  "  v2ray
+read -p "     Please Input Number  [1-8 or x] :  "  v2ray
 echo -e ""
 case $v2ray in
 1)
@@ -96,6 +96,18 @@ renewgrpc
 ;;
 4)
 cekgrpc
+;;
+5)
+addtrgrpc
+;;
+6)
+deltrgrpc
+;;
+7)
+cektrgrpc
+;;
+8)
+renewtrgrpc
 ;;
 x)
 menu
