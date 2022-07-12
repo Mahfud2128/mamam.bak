@@ -16,6 +16,7 @@ echo -e "     [7]  Change Port Squid" | lolcat
 echo -e "     [8]  Change Port SSTP" | lolcat
 echo -e "     [9]  Change Port Trojan Go" | lolcat
 echo -e "     [10]  Change Port Xray GRPC" | lolcat
+echo -e "     [11]  Change Port Trojan GRPC" | lolcat
 echo -e "     [x]  Exit"| lolcat
 echo -e "======================================" | lolcat
 echo -e ""
@@ -51,6 +52,9 @@ port-trgo
 ;;
 10)
 port-grpc
+;;
+11)
+port-trgrpc
 ;;
 x)
 clear
