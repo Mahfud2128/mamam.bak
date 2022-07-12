@@ -72,6 +72,11 @@ echo -e "$bd 1$bl]\e[m $bd Create Xray GRPC Account"
 echo -e "$bd 2$bl]\e[m $bd Delete Xray GRPC  Account"
 echo -e "$bd 3$bl]\e[m $bd Renew Xray Account"
 echo -e "$bd 4$bl]\e[m $bd Check User Login Xray"
+echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
+echo -e "$bd 4$bl]\e[m $bd Create Trojan Grpc"
+echo -e "$bd 4$bl]\e[m $bd Delete User Trojan Grpc"
+echo -e "$bd 4$bl]\e[m $bd Check User Login Trojan Grpc"
+echo -e "$bd 4$bl]\e[m $bd Renew User Trojan Grpc"
 echo -e ""
 echo -e "\e[1;32m══════════════════════════════════════════\e[m" | lolcat
 echo -e " x)   MENU   \e[m"   | lolcat
