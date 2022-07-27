@@ -88,11 +88,11 @@ IPVPS=$(curl -s ipinfo.io/ip )
 	echo -e " $op ║ \e[032;1mIsp Name:\e[0m$bd $ISP"
         echo -e " $op ║ \e[032;1mIp Vps:\e[0m$bd $IPVPS"
 	echo -e " $op ║ \e[032;1mCity:\e[0m$bd $CITY"
-	echo -e " $op ║ \e[032;1mTime:\e[0m$bd $WKT                                        
+	echo -e " $op ║ \e[032;1mTime:\e[0m$bd $WKT"                                        
 echo -e  "  ╠════════════════════════════════════════════════════════════╣" 
 echo -e  "  ║                       ┃ MENU OPTIONS ┃                      ║ \e[m" 
 echo -e  "  ╠════════════════════════════════════════════════════════════╣" 
-echo -e  " \e[32;1m ║\e[m$bd 1$bl]\e[m$bd SSH & OpenVPN Menu                                     
+echo -e  " \e[32;1m ║\e[m$bd 1$bl]\e[m$bd SSH & OpenVPN Menu"                                     
 echo -e  " $gl ║\e[m$bd 2$bl]\e[m$bd Panel Wireguard "
 echo -e  " $gl ║\e[m$bd 3$bl]\e[m$bd Panel L2TP & PPTP Account"
 echo -e  " $gl ║\e[m$bd 4$bl]\e[m$bd Panel SSTP  Account"
@@ -127,7 +127,7 @@ echo -e   " $bl ║\e[m$bd 29$bl]\e[m$bd Restart All Service"
 echo -e   " $bl ║\e[m$bd 30$bl]\e[m$bd Change Banner"
 echo -e   " $bl ║\e[m$bd 31$bl]\e[m$bd Cek Bandwith"
 echo -e   " $bl ║\e[m$bd 32$bl]\e[m$bd Delete Expired All Acoount"
-echo -e   " $bl ║\e[m$bd 33$bl]\e[m$bd Update To Last Version                                 
+echo -e   " $bl ║\e[m$bd 33$bl]\e[m$bd Update To Last Version"                                 
 echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" 
 echo -e   "  ║ x)   Exit                                                  ║\e[m" 
 echo -e   "  \e[1;32m╚════════════════════════════════════════════════════════════╝\e[m"
