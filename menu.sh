@@ -89,9 +89,9 @@ IPVPS=$(curl -s ipinfo.io/ip )
         echo -e " $op ║ \e[032;1mIp Vps:\e[0m$bd $IPVPS"
 	echo -e " $op ║ \e[032;1mCity:\e[0m$bd $CITY"
 	echo -e " $op ║ \e[032;1mTime:\e[0m$bd $WKT                                        ╥"
-echo -e  "  ╠════════════════════════════════════════════════════════════╣" | lolcat
-echo -e  "  ║                       ┃ MENU OPTIONS ┃                      ║ \e[m" |lolcat
-echo -e  "  ╠════════════════════════════════════════════════════════════╣" | lolcat
+echo -e  "  ╠════════════════════════════════════════════════════════════╣" 
+echo -e  "  ║                       ┃ MENU OPTIONS ┃                      ║ \e[m" 
+echo -e  "  ╠════════════════════════════════════════════════════════════╣" 
 echo -e  " \e[32;1m ║\e[m$bd 1$bl]\e[m$bd SSH & OpenVPN Menu                                      ╨"
 echo -e  " $gl ║\e[m$bd 2$bl]\e[m$bd Panel Wireguard "
 echo -e  " $gl ║\e[m$bd 3$bl]\e[m$bd Panel L2TP & PPTP Account"
@@ -102,9 +102,9 @@ echo -e  " $bl ║\e[m$bd 7$bl]\e[m$bd Panel VLess"
 echo -e  " $bl ║\e[m$bd 8$bl]\e[m$bd Panel TRojanGO"
 echo -e  " $bl ║\e[m$bd 9$bl]\e[m$bd Panel TrojanGFW"
 echo -e  " $bl ║\e[m$bd 10$bl]\e[m$bd Panel V2Ray GRPC"
-echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" | lolcat
-echo -e   "  ║                       ┃ SYSTEM MENU ┃                       ║\e[m" | lolcat 
-echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" | lolcat
+echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" 
+echo -e   "  ║                       ┃ SYSTEM MENU ┃                       ║\e[m" | 
+echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" 
 echo -e   " $mg ║\e[m$bd 11$bl]\e[m$bd Change Domain"
 echo -e   " $mg ║\e[m$bd 12$bl]\e[m$bd Change Port All Account"
 echo -e   " $mg ║\e[m$bd 13$bl]\e[m$bd Autobackup Data VPS"
@@ -128,9 +128,9 @@ echo -e   " $bl ║\e[m$bd 30$bl]\e[m$bd Change Banner"
 echo -e   " $bl ║\e[m$bd 31$bl]\e[m$bd Cek Bandwith"
 echo -e   " $bl ║\e[m$bd 32$bl]\e[m$bd Delete Expired All Acoount"
 echo -e   " $bl ║\e[m$bd 33$bl]\e[m$bd Update To Last Version                                 ╥"
-echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" | lolcat
-echo -e   "  ║ x)   Exit                                                  ║\e[m" | lolcat
-echo -e   "  \e[1;32m╚════════════════════════════════════════════════════════════╝\e[m" | lolcat
+echo -e   "  \e[1;32m╠════════════════════════════════════════════════════════════╣\e[m" 
+echo -e   "  ║ x)   Exit                                                  ║\e[m" 
+echo -e   "  \e[1;32m╚════════════════════════════════════════════════════════════╝\e[m"
 echo -e   ""
 read -p "     Select From Options [1-33 or x] :  " menu
 echo -e   ""
